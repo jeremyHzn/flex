@@ -1,3 +1,6 @@
+/*
+ * Elements générraux (balises) 
+*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +11,9 @@ body{
     display: flex;
     flex-direction: row;
 }
-
+/*
+ * Elements principale qui contien les trois column flex
+*/
 section{
     background-color: coral;
     flex-grow: 1;
@@ -18,17 +23,24 @@ section{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/*
+ * Elements contenu dans la section qui contiennes les paragraphe, responsive 
+*/
 section div{
     border: 1px solid black;
     flex-basis: 150px;
     flex-grow: 1;
     padding: 1rem;
 }
-
+/*
+ * Elements représentant les cotés gauche et droit de la section
+*/
 aside{
     flex-basis: 800px;
 }
-
+/*
+ * Element représentant le pied de page
+*/
 footer{
     padding: 15px;
     background-color: cadetblue;
@@ -38,7 +50,9 @@ a{
     text-decoration: none;
     color: white;
 }
-
+/*
+ * style et positionnement général des élément de type id
+*/
 #main{
     text-align: center;
     flex-grow: 1;
@@ -81,7 +95,9 @@ a{
 #right{
     background-color: rosybrown;
 }
-
+/*
+ * style des élements class
+*/
 .item{
     border: 1px solid black;
     flex-basis: 150px;
